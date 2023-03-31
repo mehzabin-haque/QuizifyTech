@@ -1,0 +1,115 @@
+.quix-box {}
+
+.custom-box {
+    max-width: 100%;
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 10px;
+    animation: fadeInRight is ease;
+}
+
+@keyframes fadeInRight {
+    0% {
+        transform: translateX(40px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.quix-box .question-number,
+.quix-box .question-text,
+.quix-box .option-container,
+.quix-box .answers-indicator {
+    width: 100%;
+    float: left;
+}
+
+.quix-box .question-number {
+    font-size: 18px;
+    color: #dc3545;
+    font-weight: 600;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 10px;
+    line-height: 25px;
+}
+
+.quix-box .question-text {
+    font-size: 22px;
+    color: #e70909;
+    font-weight: 400;
+    padding: 20px 40px;
+    line-height: 28px;
+    margin: 0px;
+}
+
+.quix-box .option-container .option {
+    background-color: #cccccc;
+    padding: 13p 15px;
+    font-size: 16px;
+    line-height: 22px;
+    color: black;
+    /* border-radius: 5px; */
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+    opacity: 0;
+    animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.btn {
+    padding: 15px 45px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.quix-box .answers-indicator {
+    border-top: 1px solid #cccccc;
+}
+
+.quix-box .answers-indicator div {
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    background-color: #cccccc;
+    border-radius: 50%;
+    margin-right: 3px;
+    margin-top: 15px;
+}
+
+.result-box h4 {
+    font-size: 36px;
+    line-height: 42px;
+    color: #dc3545;
+}
+
+.result-box table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+.result-box table td {
+    border: 1px solid #cccccc;
+    padding: 8px 15px;
+    font-weight: 500;
+    color: #000000;
+    width: 50%;
+    text-align: left;
+    font-size: 18px;
+}

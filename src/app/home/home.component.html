@@ -1,0 +1,53 @@
+<section class="my-20">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="text-danger text-center">
+                    Please Select Level and Subject
+                    <hr>
+                    <hr>
+                </h3>
+
+                <div class="form-row col-md-6">
+                    <div class="form-group">
+                        <label class=" text-18 text-danger">Subject</label>
+                        <select class="form-control">
+                            <option selected>Please choose one</option>
+                            <option value="1">Math</option>
+                            <option value="2">G.K.</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row col-md-6">
+                    <div class="form-group">
+                        <label class=" text-18 text-danger">Level</label>
+                        <select class="form-control">
+                            <option selected>Please choose one</option>
+                            <option value="1">Easy</option>
+                            <option value="2">Hard</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="card mt-5 col-md-12">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">Easy</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">
+                            <span class="text-danger">
+                                Marks
+                            </span> 100
+                            <span class="text-danger">
+                                Total Questions
+                            </span> 100
+                        </h6>
+
+                    </div>
+                    <button [routerLink]="'/question'" class="bg-red hover:bg-blue-400 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                       Start Quiz
+                      </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

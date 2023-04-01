@@ -5,6 +5,7 @@ import { QuestionComponent } from './question/question.component';
 import { ResultComponent } from './result/result.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { LoginComponent } from './login/login.component';
+import { AdminComponent } from './admin/admin.component';
 
 const routes: Routes = [
   {path:'',redirectTo:'/welcome',pathMatch:'full'},
@@ -12,7 +13,8 @@ const routes: Routes = [
   {path:'login',component:LoginComponent},
   {path:'home',component:HomeComponent},
   {path:'question',component:QuestionComponent},
-  {path:'result',component:ResultComponent}
+  {path:'result',component:ResultComponent},
+  {path:'admin',component:AdminComponent}
 ];
 
 @NgModule({

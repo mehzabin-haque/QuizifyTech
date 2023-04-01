@@ -9,7 +9,9 @@ import { HomeComponent } from './home/home.component';
 import { QuestionComponent } from './question/question.component';
 import { ResultComponent } from './result/result.component';
 import { LoginComponent } from './login/login.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
+import { gsap } from 'gsap';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +19,8 @@ import { LoginComponent } from './login/login.component';
     HomeComponent,
     QuestionComponent,
     ResultComponent,
-    LoginComponent
+    LoginComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,

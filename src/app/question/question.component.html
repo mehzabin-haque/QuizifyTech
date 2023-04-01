@@ -1,33 +1,38 @@
-<div class="row">
-    <div class="col-md-6">
-        <div class="quix-box custom-box">
-            <div class="question-number">Question No:1/100 <span class="float-right">10:50</span></div>
-            <div class="question-text text-justify">This is my Question</div>
-            <div class="option-container">
-                <div class="option text-justify" [style.animation-delay.s]="1">Option A</div>
-                <div class="option text-justify" [style.animation-delay.s]="2">Option B</div>
-                <div class="option text-justify" [style.animation-delay.s]="3">Option C</div>
-                <div class="option text-justify" [style.animation-delay.s]="4">Option D</div>
+<app-navbar></app-navbar>
+<section class="px-400 pt-40 pl-80">
+    <div class="container ">
+
+        <div class="col-md-8">
+            <div class="quix-box custom-box">
+                <div class="question-number">Question No:1/100 <span class="float-right">10:50</span></div>
+                <div class="question-text text-justify">This is my Question</div>
+                <div class="option-container">
+                    <div class="option text-justify" [style.animation-delay.s]="1">Option A</div>
+                    <div class="option text-justify" [style.animation-delay.s]="2">Option B</div>
+                    <div class="option text-justify" [style.animation-delay.s]="3">Option C</div>
+                    <div class="option text-justify" [style.animation-delay.s]="4">Option D</div>
+                </div>
+
+                <div class="align-content-center pl-80">
+                    <button [routerLink]="'/result'" type="button" class="btn-sm  bg-red-500 text-white font-semi-bold py-2 px-3 rounded ">Next</button>
+                </div>
+
+                <div class="answers-indicator">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
             </div>
 
-            <div class="align-content-center">
-                <button type="button" class="btn-sm bg-red-500 text-white font-semi-bold py-2 px-3 rounded ">Next</button>
-            </div>
 
-            <div class="answers-indicator">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
         </div>
-
-
     </div>
-</div>
+
+</section>

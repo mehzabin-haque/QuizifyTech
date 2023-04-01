@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
   
+  showDiv = false;
   
   ngOnInit(): void {
     throw new Error('Method not implemented.');

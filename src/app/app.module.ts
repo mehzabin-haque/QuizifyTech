@@ -13,6 +13,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
 
 import { gsap } from 'gsap';
 import { AdminComponent } from './admin/admin.component';
+import { RegiComponent } from './regi/regi.component';
+// import { LogoComponent } from './logo/logo.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +24,8 @@ import { AdminComponent } from './admin/admin.component';
     ResultComponent,
     LoginComponent,
     WelcomeComponent,
-    AdminComponent
+    AdminComponent,
+    RegiComponent
   ],
   imports: [
     BrowserModule,

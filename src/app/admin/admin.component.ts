@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { ApiResponse } from '../models/api-response';
 
 @Component({
   selector: 'app-admin',
@@ -13,17 +15,29 @@ export class AdminComponent implements OnInit {
   option2!: string;
   option3!: string;
   option4!: string;
-  correctOption!: string;
+  correctOption: number=0;
+  message!: string;
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
   }
 
-  addQuestion(): void {
-    // Here you could implement the logic to save the question data to the backend, using a service or API.
-    // You could create a model to represent the question data and use it to send a POST request to the server.
+  addQuestion(question:string,category:string,difficulty:string,option1:string,option2:string,option3:string,option4:string,correctOption:number): void {
+    const questionData = new FormData();
+    questionData.append('question',question);
+    questionData.append('category',category);
+    questionData.append('difficulty',difficulty);
+    questionData.append('option1',option1);
+    questionData.append('option2',option2);
+    questionData.append('option3',option3);
+    questionData.append('option4',option4);
+    questionData.append('correctOption',correctOption.toString());
 
-    // After saving the data, you could clear the form inputs or display a success message to the user.
+    this.http.post<ApiResponse>('http://localhost/project/addQuestion.php', questionData).subscribe(response => {
+      if (response.success== true) {
+        this.message= response.message;
+      }
+    });
   }
 }

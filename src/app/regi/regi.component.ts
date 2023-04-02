@@ -1,6 +1,7 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ApiResponse } from '../models/api-response';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-regi',
@@ -8,12 +9,13 @@ import { ApiResponse } from '../models/api-response';
   styleUrls: ['./regi.component.css']
 })
 export class RegiComponent implements OnInit {
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private router: Router) { }
   // @ViewChild('container') container!: ElementRef;
   name:string='';
   email:string='';
   password:string='';
   message:string='';
+  loginMessage:string='';
 
   ngOnInit(): void {
     const signUpButton = document.getElementById('signUp');
@@ -39,7 +41,21 @@ export class RegiComponent implements OnInit {
   if (response && response.message) {
     this.message = response.message;
   }
-});
-
+  });
   }
+  onLoginSubmit(email: string, password: string) {
+  
+    const formData = new FormData();
+    formData.append('email', email);
+    formData.append('password', password);
+  
+    this.http.post<ApiResponse>('http://localhost/project/login.php', formData).subscribe(response => {
+      if (response.success== true) {
+        console.log(response);
+        this.router.navigate(['/home']);
+      } else {
+        this.loginMessage = response.message;
+      }
+    });
+}
 }

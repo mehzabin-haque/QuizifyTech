@@ -7,20 +7,21 @@
                 <input type="text" name="name" [(ngModel)]="name" placeholder="Name" />
                 <input type="email" name="email" [(ngModel)]="email" placeholder="Email" />
                 <input type="password" name="password" [(ngModel)]="password" placeholder="Password" />
-                <button [routerLink]="'/regi'">Sign Up</button>
+                <button type="submit">Sign Up</button>
                 <div class="alert" *ngIf="message" style="color: red;">{{message}}</div>
             </form>
 
         </div>
         <div class="form-container sign-in-container">
-            <form>
+            <form (ngSubmit)="onLoginSubmit(email, password)">
                 <h1>Sign in</h1>
                 <div class="social-container">
                 </div>
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
+                <input type="email" name="email" [(ngModel)]="email" placeholder="Email" />
+                <input type="password" name="password" [(ngModel)]="password" placeholder="Password" />
                 <a href="#">Forgot your password?</a>
-                <button [routerLink]="'/home'">Sign In</button>
+                <button type="submit">Sign In</button>
+                <div class="alert" *ngIf="message" style="color: red;">{{message}}</div>
             </form>
         </div>
         <div class="overlay-container">

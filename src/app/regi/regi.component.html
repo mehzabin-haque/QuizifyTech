@@ -1,14 +1,16 @@
 <div class="pt-36">
     <div class="container" id="container">
         <div class="form-container sign-up-container">
-            <form>
+            <form (ngSubmit)="onSubmit(name, email, password)">
                 <h1>Create Account</h1>
                 <span>or use your email for registration</span>
-                <input type="text" placeholder="Name" />
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
+                <input type="text" name="name" [(ngModel)]="name" placeholder="Name" />
+                <input type="email" name="email" [(ngModel)]="email" placeholder="Email" />
+                <input type="password" name="password" [(ngModel)]="password" placeholder="Password" />
                 <button [routerLink]="'/regi'">Sign Up</button>
+                <div class="alert" *ngIf="message" style="color: red;">{{message}}</div>
             </form>
+
         </div>
         <div class="form-container sign-in-container">
             <form>

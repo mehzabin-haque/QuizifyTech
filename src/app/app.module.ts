@@ -10,10 +10,12 @@ import { QuestionComponent } from './question/question.component';
 import { ResultComponent } from './result/result.component';
 import { LoginComponent } from './login/login.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { FormsModule } from '@angular/forms';
 
 import { gsap } from 'gsap';
 import { AdminComponent } from './admin/admin.component';
 import { RegiComponent } from './regi/regi.component';
+import { HttpClientModule } from '@angular/common/http';
 // import { LogoComponent } from './logo/logo.component';
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { RegiComponent } from './regi/regi.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

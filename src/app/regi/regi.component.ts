@@ -52,7 +52,13 @@ export class RegiComponent implements OnInit {
     this.http.post<ApiResponse>('http://localhost/project/login.php', formData).subscribe(response => {
       if (response.success== true) {
         console.log(response);
-        this.router.navigate(['/home']);
+        if(response.type== 'user'){
+          this.router.navigate(['/home']);
+        }
+        else{
+          this.router.navigate(['/admin']);
+        }
+        
       } else {
         this.loginMessage = response.message;
       }

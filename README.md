@@ -1,4 +1,4 @@
-# Quiz System  - Web Development Project
+# Quiz System 
 
 This repository contains the code for a quiz system, developed using HTML, CSS, Tailwind CSS, Angular and PHP. The project aims to provide a user-friendly interface for quiz-based assessments in the field of web development.
 

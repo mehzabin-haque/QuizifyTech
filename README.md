@@ -1,27 +1,35 @@
-# Quiz
+# Quiz System  - Web Development Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
+This repository contains the frontend code for a quiz system, developed using HTML, CSS, Tailwind CSS, and Angular. The project aims to provide a user-friendly interface for quiz-based assessments in the field of web development.
 
-## Development server
+## Features
+- Interactive user interface for quizzes
+- Tailwind CSS for responsive design
+- Angular framework for dynamic components
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Prerequisites
+- Node.js and npm installed on your machine
 
-## Code scaffolding
+## Getting Started
+1. Clone the repository: `git clone https://github.com/mehzabin-haque/quiz`
+2. Navigate to the project directory: `cd quiz`
+3. Install dependencies: `npm install`
+4. Start the development server: `ng serve`
+5. Open the application in your browser: `http://localhost:4200`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Usage
+- Browse through quizzes available
+- Select and attempt quizzes
+- Get real-time feedback on quiz results
 
-## Build
+## Contributors 
+- (Mehzabin Haque) [https://github.com/mehzabin-haque]
+- (Shazzad Hossain) [https://github.com/mehzabin-haque]
+- Rifah Tashfia Faria [https://github.com/mehzabin-haque]
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Acknowledgments
+- This project was inspired by the need for an interactive quiz system for web development studies.
+- Special thanks to the developers of Angular, HTML, CSS, and Tailwind CSS for their excellent tools and libraries.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Feel free to explore and contribute to this frontend project for an engaging and interactive web development quiz system!

@@ -1,11 +1,12 @@
 # Quiz System  - Web Development Project
 
-This repository contains the frontend code for a quiz system, developed using HTML, CSS, Tailwind CSS, and Angular. The project aims to provide a user-friendly interface for quiz-based assessments in the field of web development.
+This repository contains the code for a quiz system, developed using HTML, CSS, Tailwind CSS, Angular and PHP. The project aims to provide a user-friendly interface for quiz-based assessments in the field of web development.
 
 ## Features
 - Interactive user interface for quizzes
 - Tailwind CSS for responsive design
 - Angular framework for dynamic components
+- User Authentication using PHP
 
 ## Prerequisites
 - Node.js and npm installed on your machine
@@ -23,9 +24,9 @@ This repository contains the frontend code for a quiz system, developed using HT
 - Get real-time feedback on quiz results
 
 ## Contributors 
-- (Mehzabin Haque) [https://github.com/mehzabin-haque]
-- (Shazzad Hossain) [https://github.com/mehzabin-haque]
-- Rifah Tashfia Faria [https://github.com/mehzabin-haque]
+- [Mehzabin Haque] (https://github.com/mehzabin-haque)
+- [Rifah Tashfia Faria] (https://github.com/rifah43)
+- [Shazzad Hossain] (https://github.com/shazzad5709)
 
 
 ## Acknowledgments
